@@ -13,4 +13,9 @@ public class Ram : Vehicle   // Gas powered truck
     {
         Console.WriteLine($"The {MainColor} Ram hauls it out of there, HARUMPPHH");
     }
+
+    public override void Stop()
+    {
+        Console.WriteLine("The Ram skids to a hault");
+    }
 }

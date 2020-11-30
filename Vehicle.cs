@@ -9,4 +9,14 @@ public class Vehicle
     {
         Console.WriteLine("Vroom!");
     }
+
+    public virtual void Turn()
+    {
+        Console.WriteLine("The vehicle safely turns right");
+    }
+
+    public virtual void Stop()
+    {
+        Console.WriteLine("The vehicle safely comes to a complete stop");
+    }
 }

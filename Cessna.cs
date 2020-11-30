@@ -13,4 +13,9 @@ public class Cessna : Vehicle  // Propellor light aircraft
     {
         Console.WriteLine($"The {MainColor} Cessna flashes like a hurricane, ZOOM");
     }
+
+    public override void Turn()
+    {
+        Console.WriteLine("The Cessna taxis to the terminal after landing");
+    }
 }

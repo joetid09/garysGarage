@@ -29,9 +29,20 @@ namespace garysGarage
             };
 
             myCessna.Drive();
+            myCessna.Turn();
+            myCessna.Stop();
+
             myTesla.Drive();
+            myTesla.Turn();
+            myTesla.Stop();
+
             myRam.Drive();
+            myRam.Turn();
+            myRam.Stop();
+
             myZero.Drive();
+            myZero.Turn();
+            myZero.Stop();
         }
     }
 }
