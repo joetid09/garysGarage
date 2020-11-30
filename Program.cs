@@ -9,10 +9,25 @@ namespace garysGarage
 
             Cessna myCessna = new Cessna
             {
-                MainColor = "red"
+                MainColor = "Red",
+                MaximumOccupancy = "Three"
+            };
+            Zero myZero = new Zero
+            {
+                MainColor = "Blue",
+                MaximumOccupancy = "Eight"
+            };
+            Tesla myTesla = new Tesla
+            {
+                MainColor = "Teal",
+                MaximumOccupancy = "Four"
+            };
+            Ram myRam = new Ram
+            {
+                MainColor = "Maroon",
+                MaximumOccupancy = "Five"
             };
 
-            Console.WriteLine($"{myCessna.MainColor}");
         }
     }
 }
