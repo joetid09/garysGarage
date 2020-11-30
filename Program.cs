@@ -28,6 +28,7 @@ namespace garysGarage
                 MaximumOccupancy = "Five"
             };
 
+            myCessna.Drive();
         }
     }
 }
