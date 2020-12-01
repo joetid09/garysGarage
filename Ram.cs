@@ -1,13 +1,17 @@
 using System;
 
-public class Ram : Vehicle   // Gas powered truck
+public class Ram : Vehicle, IGassy   // Gas powered truck
 {
     public double FuelCapacity { get; set; }
 
+    public double CurrentTankPercentage { get; set; } = 10;
+
+
     public void RefuelTank()
     {
-        // method definition omitted
+        CurrentTankPercentage = 100;
     }
+
 
     public override void Drive()
     {

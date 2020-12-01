@@ -10,6 +10,17 @@ public interface IElectric
         // method definition omitted
     }
 }
+
+public interface IGassy
+{
+    double FuelCapacity { get; set; }
+    double CurrentTankPercentage { get; set; }
+
+    void RefuelTank()
+    {
+        // method definition omitted
+    }
+}
 public class Vehicle
 {
     public string MainColor { get; set; }

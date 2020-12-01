@@ -1,12 +1,15 @@
 using System;
 
-public class Cessna : Vehicle  // Propellor light aircraft
+public class Cessna : Vehicle, IGassy  // Propellor light aircraft
 {
     public double FuelCapacity { get; set; }
 
+
+    public double CurrentTankPercentage { get; set; } = 25;
+
     public void RefuelTank()
     {
-        // method definition omitted
+        CurrentTankPercentage = 100;
     }
 
     public override void Drive()

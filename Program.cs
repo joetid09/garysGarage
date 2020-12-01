@@ -19,7 +19,7 @@ namespace Garage
 
             foreach (IElectric ev in electricVehicles)
             {
-                Console.WriteLine($"{ev.CurrentChargePercentage}");
+                Console.WriteLine($"{ev} has a charge of {ev.CurrentChargePercentage}");
             }
 
             foreach (IElectric ev in electricVehicles)
@@ -30,34 +30,34 @@ namespace Garage
 
             foreach (IElectric ev in electricVehicles)
             {
-                Console.WriteLine($"{ev.CurrentChargePercentage}");
+                Console.WriteLine($"The {ev } has been charged up to {ev.CurrentChargePercentage}");
             }
 
             /***********************************************/
 
-            // Ram ram = new Ram();
-            // Cessna cessna150 = new Cessna();
+            Ram ram = new Ram();
+            Cessna cessna150 = new Cessna();
 
-            // List <???> gasVehicles = new List<???> () {
-            //     ram, cessna150
-            //   };
+            List<IGassy> gasVehicles = new List<IGassy>() {
+                ram, cessna150
+              };
 
-            // Console.WriteLine("Gas Vehicles");
-            // foreach (??? gv in gasVehicles)
-            // {
-            //     Console.WriteLine($"{gv.CurrentTankPercentage}");
-            // }
+            Console.WriteLine("Gas Vehicles");
+            foreach (IGassy gv in gasVehicles)
+            {
+                Console.WriteLine($"{gv} currently has {gv.CurrentTankPercentage} points");
+            }
 
-            // foreach (??? gv in gasVehicles)
-            // {
-            //     // This should completely refuel the gas tank
-            //     gv.RefuelTank();
-            // }
+            foreach (IGassy gv in gasVehicles)
+            {
+                // This should completely refuel the gas tank
+                gv.RefuelTank();
+            }
 
-            // foreach (??? gv in gasVehicles)
-            // {
-            //     Console.WriteLine($"{gv.CurrentTankPercentage}");
-            // }
+            foreach (IGassy gv in gasVehicles)
+            {
+                Console.WriteLine($"The {gv} has been refueled to {gv.CurrentTankPercentage} gas points");
+            }
         }
     }
 }
