@@ -1,5 +1,15 @@
 using System;
 
+public interface IElectric
+{
+    double BatteryKWh { get; set; }
+    double CurrentChargePercentage { get; set; }
+
+    void ChargeBattery()
+    {
+        // method definition omitted
+    }
+}
 public class Vehicle
 {
     public string MainColor { get; set; }
